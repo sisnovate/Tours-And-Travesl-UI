@@ -15,11 +15,24 @@
     <!---Nav Section-->
     <div class="flex items-center justify-between px-10 py-5 bg-slate-100 shadow-md sticky top-0 z-10">
         <h1 class="font-medium text-lg text-blue-600">Happy Holidays</h1>
-        <ul class=" flex text-sky-500 font-medium justify-end space-x-4">
-            <li><a href="home.html" class="hover:text-blue-700">About</a></li>
+        <button class="lg:hidden focus:outline-none" id="mobile-menu-button">
+            <svg class="w-6 h-6 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </button>
+        <ul class="hidden lg:flex text-sky-500 font-medium space-x-4">
+            <li><a href="home.html" class="hover:text-blue-700">Home</a></li>
             <li><a href="destination.html" class="hover:text-blue-700 hover:scale-110">Destination</a></li>
             <li><a href="countries.html" class="hover:text-blue-700 hover:scale-110">Countries</a></li>
-            <li><a href="contacts .html" class="hover:text-blue-700 hover:scale-110">Contacts</a></li>
+            <li><a href="contacts.html" class="hover:text-blue-700 hover:scale-110">Contacts</a></li>
+        </ul>
+        <ul class="hidden text-sky-500 font-medium space-y-2 lg:hidden" id="mobile-menu">
+            <li><a href="home.html" class="block hover:text-blue-700">Home</a></li>
+            <li><a href="destination.html" class="block hover:text-blue-700 hover:scale-110">Destination</a></li>
+            <li><a href="countries.html" class="block hover:text-blue-700 hover:scale-110">Countries</a></li>
+            <li><a href="contacts.html" class="block hover:text-blue-700 hover:scale-110">Contacts</a></li>
         </ul>
     </div>
     <!--end Nav Section-->
@@ -32,7 +45,7 @@
             " alt="img">
                     <div class="absolute inset-0 flex flex-col items-center justify-center">
                         <div class="text-white text-center mb-8">
-                            <h2 class="text-4xl font-bold shadow-lg">Let's Explore Germany!</h2>
+                            <h2 class=" md:text-4xl text-2xl font-bold shadow-lg">Let's Explore Germany!</h2>
                         </div>
                         <a href="#_"
                             class="relative inline-flex items-center justify-center px-6 py-3 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
@@ -52,9 +65,9 @@
                         alt="img2">
                     <div class="absolute inset-0 flex flex-col items-center justify-center">
                         <div class="text-white text-center mb-8">
-                            <h2 class="text-4xl font-bold shadow-lg">Let's Explore Germany!</h2>
+                            <h2 class="md:text-4xl text-2xl font-bold shadow-lg">Let's Explore Germany!</h2>
                         </div>
-                        <a href="#_"
+                        <a href="#"
                             class="relative inline-flex items-center justify-center px-6 py-3 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
                             <span
                                 class="absolute inset-0 w-full h-full mt-1 ml-1 transition-all duration-300 ease-in-out bg-purple-600 rounded-md group-hover:mt-0 group-hover:ml-0"></span>
@@ -72,7 +85,7 @@
                         src="https://images.unsplash.com/photo-1506760610100-1af6025cf0c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80">
                     <div class="absolute inset-0 flex flex-col items-center justify-center">
                         <div class="text-white text-center mb-8">
-                            <h2 class="text-4xl font-bold shadow-lg">Let's Explore Germany!</h2>
+                            <h2 class="md:text-4xl text-2xl font-bold shadow-lg">Let's Explore Germany!</h2>
                         </div>
                         <a href="#_"
                             class="relative inline-flex items-center justify-center px-6 py-3 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
@@ -93,7 +106,7 @@
                         alt="">
                     <div class="absolute inset-0 flex flex-col items-center justify-center">
                         <div class="text-white text-center mb-8">
-                            <h2 class="text-4xl font-bold shadow-lg">Let's Explore Germany!</h2>
+                            <h2 class="md:text-4xl text-2xl font-bold shadow-lg">Let's Explore Germany!</h2>
                         </div>
                         <a href="#"
                             class="relative inline-flex items-center justify-center px-6 py-3 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
@@ -203,48 +216,56 @@
         </section>
         <!--Cards Section-- end-->
         <section>
-            <section>
-                <div class="bg-blue-500">
-                    <div class="ml-16">
-                        <h1
-                            class="sm:text-4xl text-5xl justify-center font-bold title-font mb-2 text-white py-5 drop-shadow-md shadow-blue-600/50 ">
-                            Why US ?</h1>
+            <div class="bg-blue-500">
+                <div class="ml-44">
+                    <h1
+                        class="sm:text-4xl content-center text-5xl justify-center font-bold title-font mb-2 text-white py-5 drop-shadow-md shadow-blue-600/50 ">
+                        Why US ?</h1>
+                </div>
+                <div class="flex mb-4">
+                    <div class="w-1/2  ">
+                        <ul class=" ml-44 text-white">
+                            <li class="py-2 content-center	 hover:underline"><a href="#">Expertise and Experience</a>
+                            </li>
+                            <li class="py-2 content-center	 hover:underline"><a href="#">Advance Booking System</a></li>
+                            <li class="py-2  content-center	hover:underline"><a href="#">Affordable Prices</a></li>
+                            <li class="py-2  content-center	 hover:underline"><a href="#">Safe and Security</a></li>
+                            <li class="py-2  content-center	hover:underline"><a href="#">High Quality Service</a></li>
+                        </ul>
                     </div>
 
+                    <div class="w-1/2 h-12 ">
+                        <img src="./pngegg (2) 1.png" alt="plane image" class="mt-[-9rem]">
 
-
-
-                    <div class="flex mb-4">
-                        <div class="w-1/2  ">
-                            <ul class=" ml-16 text-white">
-                                <li class="py-2"><a href="#">Expertise and Experience</a></li>
-                                <li class="py-2"><a href="#">Advance Booking System</a></li>
-                                <li class="py-2"><a href="#">Affordable Prices</a></li>
-                                <li class="py-2"><a href="#">Safe and Security</a></li>
-                                <li class="py-2"><a href="#">High Quality Service</a></li>
-                            </ul>
-                        </div>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, recusandae mollitia assumenda modi repudiandae quaerat in, accusantium unde corrupti asperiores maxime eius quibusdam consequatur vero, rem accusamus dolorum veniam laborum.
-                        <div class="w-1/2 h-12 ">
-                            <img src="./pngegg (2) 1.png" alt="plane image" class="mt-[-11rem]">
-
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="#_"
-                            class="relative inline-flex  items-center justify-center px-6 py-3 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
-                            <span
-                                class="absolute inset-0 w-full h-full mt-1 ml-1 transition-all duration-300 ease-in-out bg-purple-600 rounded-md group-hover:mt-0 group-hover:ml-0"></span>
-                            <span class="absolute inset-0 w-full h-full bg-white rounded-md "></span>
-                            <span
-                                class="absolute inset-0 w-full h-full transition-all duration-200 ease-in-out delay-100 bg-purple-600 rounded-md opacity-0 group-hover:opacity-100 "></span>
-                            <span
-                                class="relative text-purple-600 transition-colors duration-200 ease-in-out delay-100 group-hover:text-white">Explore
-                                Our Packages</span>
-                        </a>
                     </div>
                 </div>
-            </section>
+                <div class="text-center py-3 mb-20">
+                    <a href="#_"
+                        class="relative inline-flex  items-center justify-center px-6 py-3 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
+                        <span
+                            class="absolute inset-0 w-full h-full mt-1 ml-1 transition-all duration-300 ease-in-out bg-purple-600 rounded-md group-hover:mt-0 group-hover:ml-0"></span>
+                        <span class="absolute inset-0 w-full h-full bg-white rounded-md "></span>
+                        <span
+                            class="absolute inset-0 w-full h-full transition-all duration-200 ease-in-out delay-100 bg-purple-600 rounded-md opacity-0 group-hover:opacity-100 "></span>
+                        <span
+                            class="relative text-purple-600 transition-colors duration-200 ease-in-out delay-100 group-hover:text-white">Explore
+                            Our Packages</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="py-5">
+                <footer class="bg-black    shadow dark:bg-black-500">
+                    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center  md:justify-center">
+                        <span class="text-sm  justify-center text-white sm:text-center dark:text-gray-400">© 2023 <a
+                                href="#" class="hover:underline ">Happy Holidays</a>. All Rights
+                            Reserved.
+                        </span>
+                </footer>
+
+        </footer>
+        </div>
 </body>
 
 </html>
