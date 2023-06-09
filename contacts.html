@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tours and Travels UI</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -33,6 +33,47 @@
             <li><a href="contacts.html" class="block hover:text-blue-700 hover:scale-110">Contacts</a></li>
         </ul>
     </div>
+    <div class="flex items-center justify-center min-h-screen bg-gray-100">
+        <div class="w-full max-w-md bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="md:flex">
+                <div class="md:flex-shrink-0">
+                    <img class="h-64 w-full object-cover md:h-full md:w-48"
+                        src="https://images.unsplash.com/photo-1516306305827-b74eb3993a0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=773&q=80"
+                        alt="Aeroplane flying">
+                </div>
+                <div class="p-8">
+                    <h1 class="text-3xl font-bold mb-6">Contact Us</h1>
+                    <form action="submit_form.php" method="POST">
+                        <div class="mb-4">
+                            <label class="block text-sm font-semibold mb-1" for="name">Name:</label>
+                            <input
+                                class="w-full rounded-md border-gray-300 py-2 px-3 focus:border-blue-400"
+                                type="text" id="name" name="name" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-semibold mb-1" for="email">Email:</label>
+                            <input
+                                class="w-full rounded-md border-gray-300 py-2 px-3 focus:outline-none focus:border-blue-400"
+                                type="email" id="email" name="email" required>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold mb-1" for="message">Message:</label>
+                            <textarea
+                                class="w-full rounded-md border-gray-300 py-2 px-3 focus:outline-none focus:border-blue-400"
+                                id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <div>
+                            <input
+                                class="bg-purple-500 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-md cursor-pointer"
+                                type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
