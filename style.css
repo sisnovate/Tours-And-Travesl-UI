@@ -3,3 +3,9 @@ margin: 0;
 padding: 0;
 }
 
+.footer-links {
+    a {
+      padding-bottom: 2px;
+    }
+  }
+  
